@@ -1,0 +1,35 @@
+<div class="row">
+  <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-bar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="" href="#">
+              <figure class="logo">
+                <img src="images/logo.png"/>
+              </figure>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="#main-nav-bar">
+            <ul id="right-nav-main" class="navbar-nav navbar-right">
+                <li><a class="active" href=""><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i> Planets</a></li>
+                <li><a href=""><i class="fa fa-rocket" aria-hidden="true"></i> Ships</a></li>
+                <li><a href=""><i class="fa fa-child" aria-hidden="true"></i> Characters</a></li>
+                <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+  </header>
+  <div ui-view="main-content"></div>
+  <footer>
+      <p>Nice sw quote here - by Yorman Castellanos</p>
+  </footer>
+</div>
