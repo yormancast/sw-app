@@ -17,19 +17,20 @@
           </div>
           <div class="collapse navbar-collapse" id="#main-nav-bar">
             <ul id="right-nav-main" class="navbar-nav navbar-right">
-                <li><a class="active" href=""><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i> Planets</a></li>
-                <li><a href=""><i class="fa fa-rocket" aria-hidden="true"></i> Ships</a></li>
-                <li><a href=""><i class="fa fa-child" aria-hidden="true"></i> Characters</a></li>
-                <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a class="active" ui-sref="app.main"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a ui-sref="{{cont.films.viewURL}}"><i class="fa fa-globe" aria-hidden="true"></i> {{cont.films.title}}</a></li>
+                <li><a ui-sref="{{cont.people.viewURL}}"><i class="fa fa-child" aria-hidden="true"></i> {{cont.people.title}}</a></li>
+                <li><a ui-sref="{{cont.planets.viewURL}}"><i class="fa fa-globe" aria-hidden="true"></i> {{cont.planets.title}}</a></li>
+                <li><a ui-sref="{{cont.species.viewURL}}"><i class="fa fa-globe" aria-hidden="true"></i> {{cont.species.title}}</a></li>
+                <li><a ui-sref="{{cont.vehicles.viewURL}}"><i class="fa fa-rocket" aria-hidden="true"></i> {{cont.vehicles.title}}</a></li>        <li><a ui-sref="{{cont.starships.viewURL}}"><i class="fa fa-rocket" aria-hidden="true"></i> {{cont.starships.title}}</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
 
   </header>
-  <div ui-view="main-content"></div>
+  <div class="container" ui-view=""></div>
   <footer>
-      <p>Nice sw quote here - by Yorman Castellanos</p>
+      <p>Ted the only people in the universe who have never seen Star Wars are the characters in Star Wars and that's cause they lived them Ted, that's cause they lived the Star Wars.</p>
   </footer>
 </div>

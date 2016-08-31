@@ -9,5 +9,7 @@
  * Main module of the application.
  */
 angular.module('swApp', [
-    'ui.router'
+    'ui.router',
+    'ngAnimate',
+    'ui.bootstrap'
   ])

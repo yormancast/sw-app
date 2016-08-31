@@ -1,0 +1,23 @@
+<section class="page">
+  </ul>
+  <div class="row">
+    <div ng-repeat="i in swFilms.results" class="col-md-4">
+      <article class="card">
+        <!--<figure class="transition">
+          <img src="images/films/{{filmsData[$index]}}" />
+        </figure>-->
+        <div class="card-content">
+          <h3 class="transition">{{i.title}}</h3>
+          <p>
+            <i>{{i.opening_crawl}}</i>
+          </p>
+          <div class="card-action">
+            <button type="button" ng-click="filmsModal()" class="btn ghost transition">Explore</button>
+          </div>
+        </div>
+
+
+      </article>
+    </div>
+  </div>
+</section>

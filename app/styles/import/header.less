@@ -14,39 +14,44 @@ header {
     right: 40px;
     top: 15px;
     width: auto;
-  }
-  .navbar-inverse .navbar-nav > li > a {
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    &:hover,&focus {
-      color:@primary;
-    }
-    &:after {
-      content: '';
-      border-bottom: 1.5px solid @primary;
-      transition: 0.5s ease;
-      width: 0;
-      position: absolute;
-      display: block;
-    }
-    &:hover:after {
-      content: '';
-      width: 100%;
-    }
-  }
-  ul {
     list-style: none;
     display: table;
-    width: 50%;
-    li {
-      position: relative;
-      padding: 8px 0;
-      margin-right: 20px;
-      &:last-child {
-        margin-right: 0;
+  }
+  .navbar-inverse .navbar-nav{
+    > li {
+        position: relative;
+        padding: 8px 0;
+        margin-right: 20px;
+        text-transform: capitalize;
+        &:last-child {
+          margin-right: 0;
+        }
+      > a {
+          color: #fff;
+          font-family: 'Rajdhani', sans-serif;
+          font-size: 18px;
+          font-weight: bold;
+          &:hover,&:focus {
+            color:@primary;
+          }
+          &:after {
+            content: '';
+            border-bottom: 1.5px solid @primary;
+            transition: 0.5s ease;
+            width: 0;
+            position: absolute;
+            display: block;
+          }
+          &:hover:after {
+            content: '';
+            width: 100%;
+          }
+        }
       }
+  }
+  .navbar-inverse .navbar-nav > li:last-child {
+      a:after {
+        border:none;
     }
   }
 }

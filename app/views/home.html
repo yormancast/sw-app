@@ -1,0 +1,23 @@
+<section id="home">
+
+  <div class="row">
+    <div ng-repeat="i in cont" class="col-md-4">
+      <article class="card">
+        <figure class="transition">
+          <img src="images/cards/{{i.img}}" />
+        </figure>
+        <div class="card-content">
+          <a ui-sref="{{i.viewURL}}"><h3 class="transition">{{i.title}}</h3></a>
+          <p>
+            <i>"{{i.text}}"</i>
+          </p>
+          <div class="card-action">
+            <button type="button" ui-sref="{{i.viewURL}}" class="btn btn-default center-block transition">More about {{i.title}}</button>
+          </div>
+        </div>
+
+      </article>
+    </div>
+  </div>
+
+</section>
